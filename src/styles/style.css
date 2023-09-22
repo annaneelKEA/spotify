@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  display: grid;
+  grid-auto-rows: min-content;
+}
+body {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  color: white;
+}
+nav {
+  /* background-color: rgb(45, 45, 45); */
+  align-items: center;
+}
+
+img {
+  width: auto;
+  margin: auto;
+  padding: auto;
+  display: block;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.billede {
+  filter: invert(100%);
+}
+.spotify_playliste {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  border-radius: 20px;
+}
+.header_overskrift {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  justify-content: end;
+}
+h2 {
+  color: white;
+}
+h3 {
+  color: white;
+}
+
+.overskrift12 {
+  margin-right: 30px;
+  display: grid;
+  gap: 20px;
+}
+.article1 {
+  margin-bottom: 20px;
+  background-color: rgb(45, 45, 45);
+}
+.article2 {
+  margin-bottom: 20px;
+  background-color: rgb(45, 45, 45);
+}

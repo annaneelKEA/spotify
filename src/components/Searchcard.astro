@@ -1,0 +1,31 @@
+---
+const {header} = Astro.props;
+
+---
+
+
+<article>
+
+<h2>{header}</h2>
+<slot/>
+</article>
+
+<style>
+ article{
+background-color: rgb(45, 45, 45);
+ position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-medium);
+ }
+ p{
+    color:grey;
+ }
+ article{
+background-color: rgb(45, 45, 45);
+ }
+ p{
+    color:grey;
+ }
+
+</style> 

@@ -1,0 +1,61 @@
+---
+import "../styles/style.css";
+import Card from "../components/Card.astro";
+// import Pile from "../components/Pile.astro";
+import Button from "../components/Button.astro";
+import Side1 from "../components/Side1.astro";
+import Navigation from "../components/Navigation.astro";
+
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<nav>
+        <Navigation>
+		</nav>
+		<section class="header_overskrift">
+		<header>
+			<section>
+			<Button variant="primary"> Tilmeld dig</Button>
+			<Button variant="secondary"> Log på</Button>
+			</section>
+		</header>
+		</section>
+		<aside>
+			<section class="overskrift12">
+				<article class="article1">
+				<Side1 overskrift1="Opret din første playliste" overskrift2="Det er nemt- vi skal nok hjælpe dig"></Side1>
+				<Button>Opret playliste</Button>
+				</article>
+				<article class="article2">
+				<Side1 overskrift1="Lad os finde nogle podcasts, du kan følge" overskrift2="Vi holder dig orienteret om nye episoder"></Side1>
+				<Button>Udforsk podcasts</Button>
+			</article>
+			</section>
+		</aside>
+		<main>
+			<slot/>
+		</main>
+	</body>
+</html>
+
+<style>
+ ul {
+    margin-bottom: auto;
+  }
+
+  li {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+</style> 

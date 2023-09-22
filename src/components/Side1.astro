@@ -1,0 +1,17 @@
+---
+const {overskrift1} = Astro.props;
+const {overskrift2} = Astro.props;
+---
+
+<article>
+<h2><slot/>{overskrift1}</h2>
+<p>{overskrift2}</p>
+</article>
+
+
+<style>
+
+ p{
+    color:grey;
+ }
+</style> 
