@@ -1,9 +1,23 @@
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
 main {
   display: grid;
   grid-auto-rows: min-content;
+  background-color: #121212;
+  border-radius: 20px;
 }
 body {
   background-color: black;
@@ -12,8 +26,7 @@ body {
   color: white;
 }
 nav {
-  /* background-color: rgb(45, 45, 45); */
-  align-items: center;
+  margin-bottom: 20px;
 }
 
 img {
@@ -23,6 +36,17 @@ img {
   display: block;
   margin-top: 20px;
   border-radius: 10px;
+  background-size: 50% 50%; /* Justér størrelsen på billedet (her fylder det 50% af boksen) */
+  background-position: center center; /* Placer billedet centralt */
+  background-clip: content-box;
+}
+.rotate {
+  transform: rotate(25deg) translate(18%, -2%);
+  width: 56%;
+  margin-left: 80px;
+  background-size: 50% 50%; /* Justér størrelsen på billedet (her fylder det 50% af boksen) */
+  background-position: center center; /* Placer billedet centralt */
+  background-clip: content-box;
 }
 .billede {
   filter: invert(100%);
@@ -33,6 +57,8 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
   border-radius: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 .header_overskrift {
   display: flex;
@@ -43,8 +69,21 @@ img {
 }
 h2 {
   color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
 }
 h3 {
+  color: white;
+}
+h1 {
+  margin-left: 40px;
+  color: white;
+  font-weight: bold;
+}
+p {
+  margin-left: 20px;
+  margin-right: 20px;
   color: white;
 }
 
@@ -55,9 +94,26 @@ h3 {
 }
 .article1 {
   margin-bottom: 20px;
-  background-color: rgb(45, 45, 45);
+  background-color: #242424;
+  border-radius: 20px;
 }
 .article2 {
   margin-bottom: 20px;
-  background-color: rgb(45, 45, 45);
+  background-color: #242424;
+  border-radius: 20px;
+}
+.jordbær {
+  background-color: #444;
+  height: 70px;
+  width: 300px;
+  border-radius: 20px;
+  border-color: #242424;
+}
+button {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  border: none;
+  font-weight: bold;
 }

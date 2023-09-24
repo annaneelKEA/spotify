@@ -5,6 +5,8 @@ import Card from "../components/Card.astro";
 import Button from "../components/Button.astro";
 import Side1 from "../components/Side1.astro";
 import Navigation from "../components/Navigation.astro";
+import Topbar from "../components/Topbar.astro";
+const { isSearchVisible } = Astro.props;
 
 ---
 
@@ -22,14 +24,7 @@ import Navigation from "../components/Navigation.astro";
 		<nav>
         <Navigation>
 		</nav>
-		<section class="header_overskrift">
-		<header>
-			<section>
-			<Button variant="primary"> Tilmeld dig</Button>
-			<Button variant="secondary"> Log på</Button>
-			</section>
-		</header>
-		</section>
+		<Topbar hasSearch = {isSearchVisible}/>
 		<aside>
 			<section class="overskrift12">
 				<article class="article1">

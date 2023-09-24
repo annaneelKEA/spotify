@@ -1,0 +1,30 @@
+---
+import "../styles/style.css";
+import Button from "../components/Button.astro";
+
+const { hasSearch } = Astro.props;
+
+---
+	<header>
+
+<section class="header_overskrift">
+    <section>
+    {hasSearch && <input type="text" placeholder="Søg" class="jordbær"/>}
+    </section>
+			<section>
+			<Button variant="primary"> Tilmeld dig</Button>
+			<Button variant="secondary"> Log på</Button>
+			</section>
+
+		    </section>
+    </header>
+
+
+        <style>
+            .header_overskrift{
+                display: flex;
+                flex-direction: row;
+                justify-content:space-between;
+                
+            }
+        </style>
